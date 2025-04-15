@@ -86,7 +86,8 @@ const FlashCards = () => {
   const handleClick = () => {
     setIsFlipped((prev) => !prev)
   }
-  const distinctChapters = ['All',...new Set(flashCards?.map(card => card.chapter))]
+  const distinctChapters = ['All', ...new Set(flashCards?.map((card: any) => card.chapter))];
+
   //const distinctChapters: string[] = ['All', ...Array.from(new Set((flashCards || []).map(card => card.chapter)))];
 
     const changeTitle = (index: number, chapterTitle: string) => {
@@ -94,7 +95,8 @@ const FlashCards = () => {
       if (chapterTitle === 'All') {
         SetFilteredCards(flashCards)
       } else {
-        const items = flashCards?.filter(i => i.chapter === chapterTitle)
+        const items = flashCards?.filter((i: any) => i.chapter === chapterTitle);
+
         SetFilteredCards(items)
       }
     }
