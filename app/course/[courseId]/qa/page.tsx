@@ -71,7 +71,7 @@ const QaPage = () => {
     return (
        
       
-            <div className='-mx-10 md:-mx-48 flex gap-8 items-start'>
+            <div className='-mx-10 md:-mx-48 flex gap-8 items-start overflow-x-auto'>
           
               <div className='max-h-screen shadow-md p-5 w-64 flex flex-col gap-4 rounded-md overflow-y-auto '>
                 {quizAndAns?.length && quizAndAns.map((item: any, index: number) => {

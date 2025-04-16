@@ -111,7 +111,7 @@ const FlashCards = () => {
       <p>FlashCards will help to revise quickly</p>
 
       <div className=' mt-10'>
-      <h2 className='font-bold text-xl'>Filter by content of Flashcards</h2>
+      <h2 className='font-bold text-xl hidden md:block'>Filter by content of Flashcards</h2>
         <div className=' gap-4 grid-cols-2 md:grid-cols-3 lg:grid-cols-4 mt-5 hidden md:grid'>
         {distinctChapters?.map((item:any,index:number)=>{
           return (
