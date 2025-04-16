@@ -9,7 +9,7 @@ export const { GET, POST, PUT } = serve({
   streaming:'allow',
   functions: [
     createNewUser,
-    GenerateNotes
+    GenerateNotes,
 
   ],
 });
